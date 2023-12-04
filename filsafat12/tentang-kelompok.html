@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tentang Kelompok - Hubungan dan Peranan Ilmu Pengetahuan Terhadap Perkembangan Kebudayaan Nasional - Filsafat Ilmu Kel. 12</title>
+    <link rel="stylesheet" href="css/style-about.css">
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <div id="content">
+            <article id="info" class="card">
+                <h2 class="header">Tentang Kelompok</h2>
+
+                <!-- Person 1 -->
+                <div class="person">
+                    <img src="assets/image/profile/arif-rahman.jpg" class="featured-image">
+                    <p lang="id">Arif Rahman Habibie - 202043502442</p>
+                </div>
+
+                <!-- Person 2 -->
+                <div class="person">
+                    <img src="assets/image/profile/presilia.jpeg" class="featured-image">
+                    <p lang="id">Presilia Sulastri Inda - 202043501085</p>
+                </div>
+
+                <!-- Add more persons as needed -->
+
+                <div class="person">
+                    <img src="assets/image/profile/arif-tri.jpeg" class="featured-image">
+                    <p lang="id">Arif Tri Budianto - 202043501065</p>
+                </div>
+
+                <div class="person">
+                    <img src="assets/image/profile/alif.jpeg" class="featured-image">
+                    <p lang="id">Alif Firdaus - 202043502436</p>
+                </div>
+
+                <div class="person">
+                    <img src="assets/image/profile/hafizh.jpeg" class="featured-image">
+                    <p lang="id">Muhammad Hafizh - 202043501055</p>
+                </div>
+
+                <div class="person">
+                    <img src="assets/image/profile/lukman.jpeg" class="featured-image">
+                    <p lang="id">Lukman Juhari - 202043501130</p>
+                </div>
+
+                <div class="button-container">
+                    <!-- "Go to last page" button with an ID -->
+                    <a id="goToLastPageBtn" class="button" style="display: none;">Kembali ke Halaman Sebelumnya</a>
+                    <a href="" class="button" style="display: none;"></a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&#169; 2023 Kelompok 12 Filsafat Ilmu R7M</p>
+        <a href="tentang-kelompok.html"><p>Tentang Kelompok</p></a>
+    </footer>
+
+    <!-- JavaScript code to set the href attribute dynamically -->
+    <script>
+        // Get the previous page URL
+        var previousPageUrl = document.referrer;
+
+        // Get the "Go to last page" button element
+        var goToLastPageBtn = document.getElementById('goToLastPageBtn');
+
+        // Check if the previousPageUrl is not empty
+        if (previousPageUrl && goToLastPageBtn) {
+            // Set the href attribute of the button to the previous page URL
+            goToLastPageBtn.href = previousPageUrl;
+            // Make the button visible
+            goToLastPageBtn.style.display = 'inline-block';
+        }
+    </script>
+</body>
+
+</html>

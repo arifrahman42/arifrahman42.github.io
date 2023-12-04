@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: 'Calibri', sans-serif;
+    src: local('Calibri'), local('Calibri-Regular'),
+        url('../assets/fonts/calibri.ttf') format('truetype');
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    display: inline;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+main {
+    padding: 25px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 100%;
+}
+
+.header {
+    color: #01662C;
+}
+
+/* Card Styles */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 25px;
+    margin-top: 9px;
+    max-width: 100%;
+}
+
+.featured-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+/* Larger Image on Mobile */
+@media screen and (max-width: 700px) {
+    .person .featured-image {
+        width: 100px; /* Adjust the width for smaller screens */
+        height: 100px; /* Set the height for circular shape */
+        object-fit: cover; /* Ensure the entire image is visible */
+        border-radius: 50%; /* Maintain circular shape */
+        margin-right: 20px; /* Add spacing between image and text */
+    }
+}
+
+/* Profile Styles */
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 188px;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #01662C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #014732;
+}
+
+.button:active {
+    background-color: #000f06;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+/* Footer Styles */
+footer {
+    padding: 9px;
+    color: white;
+    background-color: #01662C;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer a {
+    color: white !important;
+    text-decoration: underline;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1000px) {
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Person container Styles */
+.person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Add margin at the bottom of each person container */
+}
+
+.person p {
+    max-width: 400px;
+    text-align: left;
+}
